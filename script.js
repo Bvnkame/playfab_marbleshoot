@@ -6,6 +6,7 @@ handlers.getFriendsList = function (args, context) {
     
     var playerFriends = server.GetFriendsList (
         {
+            PlayFabId: args[0], 
             IncludeSteamFriends: false,
             IncludeFacebookFriends : true
         }
