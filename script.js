@@ -6,6 +6,7 @@ handlers.getFriendsList = function (args, context) {
     
     var playerFriends = server.GetFriendsList (
         {
+            IncludeSteamFriends: false,
             IncludeFacebookFriends : true
         }
     );
